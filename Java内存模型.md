@@ -1,6 +1,7 @@
 ## Java内存模型
 
-### 什么是Memory Barrier(内存屏障):
+### 什么是Memory Barrier(内存屏障) <br/>
+
 > We're living the future so
 
 &gt;  内存屏障，又称内存栅栏，一个CPU指令：<br/>
