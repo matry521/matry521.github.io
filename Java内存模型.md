@@ -1,7 +1,9 @@
 ## Java内存模型
 
 ### 什么是Memory Barrier(内存屏障):
->  内存屏障，又称内存栅栏，一个CPU指令：<br/>
+> We're living the future so
+
+&gt;  内存屏障，又称内存栅栏，一个CPU指令：<br/>
 >  1.保证特定操作的执行顺序。<br/>
 >  2.影响某些数据（或则是某条指令的执行结果）的内存可见性。
 >> 例如：当插入一条新的Memory Barrier时，这个时候不管什么指令都不能和这条Memory Barrier指令重排序。
