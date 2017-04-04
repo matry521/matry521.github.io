@@ -3,9 +3,9 @@
 You can use the [editor on GitHub](https://github.com/matry521/matry521.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 
-##Java内存模型##
+## Java内存模型
 
-###什么是Memory Barrier(内存屏障)？
+### 什么是Memory Barrier(内存屏障)？
 > 内存屏障，又称内存栅栏，一个CPU指令：<br/>
 > 1.保证特定操作的执行顺序。<br/>
 > 2.影响某些数据（或则是某条指令的执行结果）的内存可见性。
