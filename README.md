@@ -5,6 +5,8 @@ You can use the [editor on GitHub](https://github.com/matry521/matry521.github.i
 
 ## netty讲解
 
+<a href="Java内存模型.md">查看详情 :heart_eyes:</a> 
+
 ![Image](images/nettery.png)
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
