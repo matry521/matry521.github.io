@@ -16,5 +16,6 @@ You can use the [editor on GitHub](https://github.com/matry521/matry521.github.i
 > > 1.一个线程写入变量a，任何线程访问该变量拿到都是最新值<br/>
 > > 2.对a写入操作，更新数据对其他线程也是可见的。
 
-[Link](url) and ![Image]()
+![Image](images/nettery.png)
 
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
