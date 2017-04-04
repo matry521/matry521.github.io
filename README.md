@@ -5,7 +5,7 @@ You can use the [editor on GitHub](https://github.com/matry521/matry521.github.i
 
 ## netty讲解
 
-<a href="Java内存模型.md">查看详情 :heart_eyes:</a> 
+[查看详情 :heart_eyes:](Java内存模型.md)
 
 ![Image](images/nettery.png)
 
