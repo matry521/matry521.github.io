@@ -13,10 +13,10 @@ You can use the [editor on GitHub](https://github.com/matry521/matry521.github.i
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Netty 是一个异步的，事件驱动的网络编程框架和工具，使用Netty 可以快速开发出可维护的，高性能、高扩展能力的协议服务及其客户端应用>>>>[查看详情](test.md)
 
 ## kafka学习
-[查看详情](kafka.md)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kafka的设计初衷是希望作为一个统一的信息收集平台,能够实时的收集反馈信息,并需要能够支撑较大的数据量,且具备良好的容错能力.>>>>[查看详情](kafka.md)
 
 ## 八大排序算法
-[查看详情](排序算法.md)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们必须知道的八大种排序算法>>>>[查看详情](排序算法.md)
 
 __________________________
 
