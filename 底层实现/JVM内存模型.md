@@ -165,7 +165,8 @@
    2.栈内存是共享的，其他线程都可以访问静态属性(全局变量)<br/>
    3.静态方法在Stack中，无法访问Heap中数据。静态方法无法访问普通对象中数据。<br/>
    
-+ **性能优化** 
++ **性能优化** <br/>
+ 
    1.线程池:解决用户响应时间长的问题。<br/>
    **原理**:首先启动若干数量的线程，并让其处于睡眠状态，当有新请求时，会唤醒线程池中的某一个睡眠线程来处理请求，处理
    完成后又处于睡眠状态。<br/>
@@ -190,7 +191,7 @@
      + -XX:HeapDumpPath 
      + -XX:+PrintGCDetails
      + -XX:+PrintGCTimeStamps
-     + -Xloggc:/user/aaa/dump/heap_trace.txt
+     + -Xloggc:/user/aaa/dump/heap_trace.txt<br/>
      通过下面参数可以控制OutOfMemoryError时打印堆的信息:<br/>
      + -XX:+HeapDumpOnOutOfMemoryError
      
