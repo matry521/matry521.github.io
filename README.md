@@ -15,6 +15,9 @@ You can use the [editor on GitHub](https://github.com/matry521/matry521.github.i
 ## JVM内存模型和性能优化
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JVM内存模型在面试中奖池会被提及，现参考网上信息做出资料整理>>>>[查看详情](底层实现/JVM内存模型.md)
 
+## JVM垃圾回收机制
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GC通过确定对象是否被活动对象引用来确定是否收集该对象>>>>[查看详情](底层实现/JVM垃圾回收机制.md)
+
 ## netty简介
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Netty 是一个异步的，事件驱动的网络编程框架和工具，使用Netty 可以快速开发出可维护的，高性能、高扩展能力的协议服务及其客户端应用>>>>[查看详情](网络框架/netty.md)
 
