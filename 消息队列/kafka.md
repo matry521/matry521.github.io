@@ -136,6 +136,19 @@ batch.num.messages	|200|	一批消息的数量，仅仅for asyc
 request.required.acks	|0|	0表示producer毋须等待leader的确认，1代表需要leader确认写入它的本地log并立即确认，-1代表所有的备份都完成后确认。 仅仅for sync
 request.timeout.ms	|10000|	确认超时时间
 
+### kafka消息格式
+![Image](../images/kafka/kafka消息格式.png)
+
+### 日志
+每个日志文件都是一个"log entries"序列，每个"log entries"包含一个4字节整形数值(值为N+5)，1个字节的"magic value"，4个字节的CRC校验码，
+其后跟N个字节的消息体。每条消息都有一个当前Partition下唯一的64字节的offset，它指明了这条消息的起始位置。这个"log entries"并非一个文件构成，
+而是分成多个segment，每个segment以该segment第一条消息的offset命名以".kafka"为后缀。另外会有一个索引文件，它标明了每个segment下包含的log
+entry的offset范围，如下图所示:
+![Image](../images/kafka/kafka_segement.png)
+因为每条消息都被append到该Partition中，属于顺序写磁盘，因此效率非常高(经验证，顺序写磁盘效率比随机写内存还要高)
+![Image](../images/kafka/kafka_partition.png)
+
+
 <!-- 1.kafka节点之间如何复制备份的？
 kafka消息是否会丢失？为什么？
 kafka最合理的配置是什么？
