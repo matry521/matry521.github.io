@@ -148,6 +148,14 @@ entry的offset范围，如下图所示:
 因为每条消息都被append到该Partition中，属于顺序写磁盘，因此效率非常高(经验证，顺序写磁盘效率比随机写内存还要高)
 ![Image](../images/kafka/kafka_partition.png)
 
+### kafka应用场景
++ **日志收集**:可以用kafka收集各种服务的log，通过kafka以统一接口服务的方式开放给各种consumer，例如Hadoop、Hbase、Solr等<br/>
++ **消息系统**:解耦生产者和消费者、缓存消息等<br/>
++ **用户活动跟踪**:kafka经常被用来记录web用户或者app用户的各种活动，如浏览网页、搜索、点击等活动，这些活动信息被各个服务器发布到kafka的
+topic中，然后订阅者通过订阅这些topic来做实时的监控分析，或者装载到Hadoop、数据仓库中做离线分析和挖掘。<br/>
++ **运营指标**:kafka也经常用来记录运营监控数据。包括收集各种分布式应用的数据，生产各种操作的几种反馈，比如报警和报告。<br/>
++ **流式处理**:比如spark streaming和storm<br/>
++ **事件源**
 
 <!-- 1.kafka节点之间如何复制备份的？
 kafka消息是否会丢失？为什么？
